@@ -1,0 +1,29 @@
+# VCS build artifacts
+simv*
+csrc/
+*.daidir
+*.vdb
+
+# Coverage / reports
+urgReport/
+urgReport_merged/
+cov_*.vdb
+merged.vdb
+
+# Waveforms
+*.fsdb
+novas*
+vdCovLog/
+
+# Verdi / VCS logs and misc
+*.log
+ucli
+ucli.key
+vc_hdrs.h
+DVEfiles/
+cm.log
+vdCov.conf
+
+# OS / editor junk
+.DS_Store
+*.swp
