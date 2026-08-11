@@ -45,6 +45,15 @@ The scoreboard checks correctness without ever reading the DUT's internal `count
 | Code coverage — Toggle | 88.89% (MSB structurally unused — see below) |
 | UVM_ERROR | 0 |
 
+###Screenshots
+**Merged functional coverage-100% across all 7 tests**
+![Functional coverage - 100%](docs/images/functional_coverage.png)
+
+
+
+**code coverage on the dut**
+![Code coverage - dut](docs/images/code_coverage.png)
+
 **Toggle coverage note:** `Dutycycle` and `counter` are 8-bit (`[7:0]`, 0–255 representable) but the design only ever uses 0–99. The MSB (bit 7, weight 128) can never legally go high, so 7/8 bits fully toggle and the score plateaus at 88.89% — a structural property of the design, not a stimulus gap.
 
 ## Running It
